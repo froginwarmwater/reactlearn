@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
+import './clock.js'
 
 function Square(props) {
     return (
@@ -118,8 +118,11 @@ class Game extends React.Component {
 
 // ========================================
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Game />);
+
+
+
+const game = ReactDOM.createRoot(document.getElementById("game"));
+game.render(<Game />);
 function calculateWinner(squares) {
     const lines = [
         [0, 1, 2],
@@ -139,3 +142,4 @@ function calculateWinner(squares) {
     }
     return null;
 }
+
