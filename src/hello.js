@@ -8,6 +8,9 @@ function tick() {
         <div>
             <Welcome name={newName}/>
             <h2>It is {new Date().toLocaleTimeString()}.</h2>
+
+            11111
+            <Toggle/>
         </div>
     );
     root.render(element);
@@ -17,3 +20,4 @@ function Welcome(props){
 }
 
 setInterval(tick, 1000);
+
